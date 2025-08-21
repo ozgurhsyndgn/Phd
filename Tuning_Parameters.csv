@@ -1,0 +1,101 @@
+model;run;formula (GLM);mtry (RF);n.trees (GBM);interaction.depth (GBM);shrinkage (GBM);bag.fraction (GBM)
+RF_GBM_GLM;_PA1_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";1;500;2;0.01;0.5
+RF_GBM_GLM;_PA1_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";2;1000;8;0.01;0.5
+RF_GBM_GLM;_PA1_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + 
+bio4:bio12:bio15 + bio10:bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA1_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15";2;1000;5;0.1;0.5
+RF_GBM_GLM;_PA2_RUN1;"castanea ~ 1 + gam::s(bio4) + gam::s(bio10) + gam::s(bio12) + gam::s(bio15) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 +
+ bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";1;500;8;0.1;0.5
+RF_GBM_GLM;_PA2_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15";1;1000;5;0.01;0.5
+RF_GBM_GLM;_PA2_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15 + 
+bio4:bio10:bio12:bio15";2;500;8;0.1;0.5
+RF_GBM_GLM;_PA2_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15";1;1000;8;0.1;0.5
+RF_GBM_GLM;_PA3_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";2;2500;8;0.1;0.5
+RF_GBM_GLM;_PA3_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15 +
+ bio4:bio10:bio12:bio15";2;2500;5;0.1;0.5
+RF_GBM_GLM;_PA3_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";3;2500;8;0.1;0.5
+RF_GBM_GLM;_PA3_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA4_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) 
++ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";1;2500;8;0.01;0.5
+RF_GBM_GLM;_PA4_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";4;2500;8;0.1;0.5
+RF_GBM_GLM;_PA4_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA4_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA5_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15 +
+ bio4:bio10:bio12:bio15";2;2500;8;0.01;0.5
+RF_GBM_GLM;_PA5_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15";1;500;8;0.1;0.5
+RF_GBM_GLM;_PA5_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15 + 
+bio4:bio10:bio12:bio15";1;1000;8;0.01;0.5
+RF_GBM_GLM;_PA5_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15";1;2500;2;0.01;0.5
+RF_GBM_GLM;_PA6_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15";1;1000;5;0.1;0.5
+RF_GBM_GLM;_PA6_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15";1;1000;8;0.01;0.5
+RF_GBM_GLM;_PA6_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";3;2500;8;0.1;0.5
+RF_GBM_GLM;_PA6_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";1;1000;2;0.1;0.5
+RF_GBM_GLM;_PA7_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15";4;2500;5;0.01;0.5
+RF_GBM_GLM;_PA7_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15 +
+ bio4:bio10:bio12:bio15";3;1000;8;0.1;0.5
+RF_GBM_GLM;_PA7_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";3;500;8;0.01;0.5
+RF_GBM_GLM;_PA7_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + bio4:bio12:bio15 + bio10:bio12:bio15";2;2500;8;0.1;0.5
+RF_GBM_GLM;_PA8_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 + 
+bio10:bio12 + bio10:bio15 + bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA8_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + 
+bio4:bio12:bio15 + bio10:bio12:bio15";2;500;8;0.1;0.5
+RF_GBM_GLM;_PA8_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15";2;2500;8;0.01;0.5
+RF_GBM_GLM;_PA8_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + bio10 + I(bio10^2) + bio12 + I(bio12^2) + bio15 + I(bio15^2) + bio4:bio10 + bio4:bio12 + bio4:bio15 +
+ bio10:bio12 + bio10:bio15 + bio12:bio15";2;2500;8;0.01;0.5
+RF_GBM_GLM;_PA9_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";4;1000;8;0.01;0.5
+RF_GBM_GLM;_PA9_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + 
+bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";1;1000;8;0.01;0.5
+RF_GBM_GLM;_PA9_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA9_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA10_RUN1;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";2;500;8;0.1;0.5
+RF_GBM_GLM;_PA10_RUN2;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15";2;1000;8;0.1;0.5
+RF_GBM_GLM;_PA10_RUN3;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) + 
+I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 +
+ bio4:bio12:bio15 + bio10:bio12:bio15";1;2500;8;0.1;0.5
+RF_GBM_GLM;_PA10_RUN4;"castanea ~ 1 + bio4 + I(bio4^2) + I(bio4^3) + bio10 + I(bio10^2) + I(bio10^3) + bio12 + I(bio12^2) + I(bio12^3) + bio15 + I(bio15^2) +
+ I(bio15^3) + bio4:bio10 + bio4:bio12 + bio4:bio15 + bio10:bio12 + bio10:bio15 + bio12:bio15 + bio4:bio10:bio12 + bio4:bio10:bio15 + 
+bio4:bio12:bio15 + bio10:bio12:bio15 + bio4:bio10:bio12:bio15";1;1000;8;0.01;0.5
